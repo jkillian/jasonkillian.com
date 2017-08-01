@@ -15,5 +15,8 @@ exports.plugins = {
     processors: [
       require('autoprefixer')(),
     ],
-  }
+  },
+  pug: {
+    staticPretty: false,
+  },
 };
