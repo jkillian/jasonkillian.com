@@ -1,0 +1,26 @@
+* {
+   box-sizing: border-box;
+}
+
+html {
+   height: 100%;
+}
+
+body {
+   min-height: 100%;
+   overflow-y: hidden;
+}
+
+svg {
+   width:100%;
+   max-width: 1000px;
+   margin-top: -20px;
+}
+
+.center-cont {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex: 0 1 auto;
+   height: 100vh;
+}
