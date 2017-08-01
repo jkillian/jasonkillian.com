@@ -18,5 +18,6 @@ exports.plugins = {
   },
   pug: {
     staticPretty: false,
+    preCompile: true,
   },
 };
