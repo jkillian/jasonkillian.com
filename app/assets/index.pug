@@ -1,13 +1,5 @@
-doctype html
-html(lang="en")
-  head
-    meta(charset="utf-8")
-    meta(http-equiv="X-UA-Compatible" content="IE=edge")
-    title Jason Killian
-    meta(name="viewport" content="width=device-width, initial-scale=1")
-    link(rel="stylesheet" href="app.css")
-    script(src="//use.typekit.net/mle8iiy.js")
-    script try{Typekit.load();}catch(e){}
-  body
-    .center-cont
-      include ../pug/logo.pug
+extends ../pug/layouts/base.pug
+
+block content
+  .center-cont
+    include ../pug/includes/logo.pug
