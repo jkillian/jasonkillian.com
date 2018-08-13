@@ -1,12 +1,22 @@
 doctype html
 html(lang="en")
   head
+    script(async src="https://www.googletagmanager.com/gtag/js?id=UA-123884019-1")
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-123884019-1');
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
     title Jason Killian
     meta(name="viewport" content="width=device-width, initial-scale=1")
-    link(rel="stylesheet" href="app.css")
-    script(src="//use.typekit.net/mle8iiy.js")
-    script try{Typekit.load();}catch(e){}
+    link(rel="stylesheet" href="/app.css")
+    script(src="/vendor.js")
+    script(src="/app.js")
+    script require('js/initialize')
+    link(href="https://fonts.googleapis.com/css?family=Lora|Oxygen:300,400,700" rel="stylesheet")
+    block extra-head
   body
-    block content
+    block all
+

@@ -21,3 +21,8 @@ exports.plugins = {
     preCompile: true,
   },
 };
+
+exports.watcher = {
+  usePolling: true,
+  awaitWriteFinish: true,
+}

@@ -1,26 +1,156 @@
 * {
-   box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-   height: 100%;
+  height: 100%;
 }
 
 body {
-   min-height: 100%;
-   overflow-y: hidden;
+  min-height: 100%;
+  background-color: #f7fbf9;
 }
 
-svg {
-   width:100%;
-   max-width: 1000px;
-   margin-top: -20px;
+.site-main-logo {
+  width:90%;
+  max-width: 1000px;
+  margin-top: -20px;
 }
 
 .center-cont {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex: 0 1 auto;
-   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 1 auto;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.site-header {
+  height: 50px;
+  width: 100%;
+  background-color: #2d2d2d;
+  display: flex;
+  align-items: center;
+  background-color: #4A8CA2;
+}
+
+.site-bar {
+  height: 100%;
+  display: inline-block;
+  width: 5px;
+}
+
+.site-bar:nth-of-type(5n+1) {
+  background-color: #84D4EE;
+}
+.site-bar:nth-of-type(5n+2) {
+  background-color: #FDDDDA;
+}
+.site-bar:nth-of-type(5n+3) {
+  background-color: #F2857A;
+}
+.site-bar:nth-of-type(5n+4) {
+  background-color: #A2524A;
+}
+.site-bar:nth-of-type(5n+5) {
+  background-color: #4A8CA2;
+}
+
+.site-link, .site-link:visited {
+  color: #fafafa;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.site-link:hover {
+  text-decoration: underline;
+}
+
+.site-title {
+  margin-right: 20px;
+}
+.site-title-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .site-title-mobile {
+    display: block;
+  }
+  .site-title {
+    display: none;
+  }
+  .site-link {
+    font-size: 20px;
+  }
+}
+
+.pages {
+  text-align: right;
+  flex: 1 1 auto;
+}
+
+.text-cont {
+  max-width: 700px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-family: 'Lora', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /* font-family: 'Merriweather Sans', sans-serif; */
+  font-weight: normal;
+  font-family: 'Oxygen', sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+.inline {
+  display: inline
+}
+
+p {
+  font-family: 'Lora', serif;
+  font-size: 18px;
+}
+
+img {
+  max-width: 100%;
+}
+
+a, a:visited {
+  color: #176782;
+  /* color: #d12415; */
+  text-decoration: none
+}
+
+a:hover {
+  text-decoration: underline;
 }
