@@ -1,6 +1,6 @@
 # Autoformatting Adventures
 
-*An adventure in developer tooling and the world of open source*
+*An adventure in developer tooling and the world of open source!*
 
 ### Adding autoformatting
 
