@@ -11,11 +11,9 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "auto-reload-brunch": "^2.7.1",
     "autoprefixer": "^9.7.3",
     "babel-brunch": "^7.0.1",
     "brunch": "^2.10.17",
-    "clean-css-brunch": "^2.10.0",
     "jstransformer-markdown-it": "^2.1.0",
     "postcss-brunch": "^2.10.1",
     "pugjs-brunch": "^2.11.3",
