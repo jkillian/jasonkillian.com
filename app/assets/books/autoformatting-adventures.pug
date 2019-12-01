@@ -1,0 +1,5 @@
+extends ../../pug/layouts/main.pug
+
+block content
+  article.text-cont
+    include:markdown-it(langPrefix='language-', html=true) autoformatting-adventures/article.md
