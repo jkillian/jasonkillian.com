@@ -10,7 +10,6 @@ exports.files = {
 };
 
 exports.plugins = {
-  babel: {presets: ['latest']},
   postcss: {
     processors: [
       require('autoprefixer')(),
@@ -18,7 +17,7 @@ exports.plugins = {
   },
   pug: {
     staticPretty: false,
-    preCompile: true,
+    preCompilePattern: /\.pug$/,
   },
 };
 
